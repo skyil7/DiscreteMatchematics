@@ -16,10 +16,10 @@ for i in range(n):
 pair = sorted(pair, key= lambda item:item[1])
 
 def time(record):
-    min = int(record/60)
-    sec = int(record%60)
-    hour = int(min/60)
-    min = int(min%60)
+    min = record//60
+    sec = record%60
+    hour = min//60
+    min = min%60
     return hour, min, sec
 
 for i in range(3):
