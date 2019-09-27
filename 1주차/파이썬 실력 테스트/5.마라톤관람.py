@@ -23,4 +23,5 @@ def time(record):
     return hour, min, sec
 
 for i in range(3):
-    print(pair[i][0], time(pair[i][1]))
+    h, m, s = time(pair[i][1])
+    print(pair[i][0], h,m,s)
